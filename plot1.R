@@ -28,3 +28,6 @@ power_data[power_data$Date == date1, "Time"] <- format(power_data[power_data$Dat
 
 hist(as.numeric(power_data$Global_active_power), col="red", main = "Global Active Power", xlab= "Global Active Power (kilowatts)")
 
+## Export to png
+dev.copy(png, file="plot1.png", width=480, height=480)
+dev.off() ## Close device

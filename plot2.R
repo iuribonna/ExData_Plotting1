@@ -28,3 +28,6 @@ power_data[power_data$Date == date1, "Time"] <- format(power_data[power_data$Dat
 
 plot(power_data$Time,as.numeric(as.character(power_data$Global_active_power)),type="l",xlab="",ylab="Global Active Power (kilowatts)")
 
+## Export to png
+dev.copy(png, file="plot2.png", width=480, height=480)
+dev.off()

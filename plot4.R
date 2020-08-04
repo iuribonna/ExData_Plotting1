@@ -24,7 +24,7 @@ power_data[power_data$Date == date1, "Time"] <- format(power_data[power_data$Dat
 
 ## ------------------------------------------------
 
-## Creates the four plots
+## Creates the four plots - based in RPub (www.rpubs.com) code
 
 with(power_data,{
   plot(power_data$Time,as.numeric(power_data$Global_active_power),type="l",  xlab="",ylab="Global Active Power")  
